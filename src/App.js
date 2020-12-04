@@ -7,17 +7,22 @@ function App() {
     <div>
       <h1> Virtual Machine Configuration</h1>
       
-      <select id = "Select Region">
-          <option value="N/A">N/A</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-      </select>
+          <select id = "Select">
+              <option value="N/A">Select Region</option>
+              <option value="1">US - East 1</option>
+              <option value="2">Asia Pacific Mumbai</option>
+              <option value="3">US West</option>
+            
+          </select>
 
       <Tabs> 
        <div label="Choose Image"> 
-         See ya later, <em>Fill This</em>! 
+         See ya later, 
+           <em>
+              <div>
+                Linux 2 Image
+              </div>
+           </em>! 
        </div> 
        <div label="Choose Instance Type"> 
          After 'while, <em>Fill</em>! 
@@ -28,7 +33,7 @@ function App() {
        <div label="Configure Security"> 
          Nothing to see here, this tab is <em>extinct</em>! 
        </div> 
-       <div label="Review and Launch"> 
+       <div label="Review and Launch ....."> 
          Nothing to see here, this tab is <em>extinct</em>! 
        </div> 
      </Tabs> 
