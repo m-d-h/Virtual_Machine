@@ -1,6 +1,7 @@
 
 import './App.css';
 import Tabs from "./components/Tabs"; 
+
 //import StackGrid from "react-stack-grid";
 
 function App() {
@@ -56,7 +57,12 @@ function App() {
               <div>
                 <h1>Red Hat Enterprise Linux 8</h1>
                 <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
-
+                    <form>
+                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                        <button type="submit"> Select
+                        </button>
+                    </form>
               </div>
               <div>
               ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -92,21 +98,88 @@ function App() {
               
               </div>
 
-           </em>! 
+           </em> 
        </div> 
        <div label="Choose Instance Type"> 
            <em>
-           xxdd
-          </em>! 
+            <Tabs> 
+              <div label="General Purpose"> 
+                <em>
+                  <h2>Create Configuration</h2>
+                  <select id = "Select">
+                    <option value="CPU Cores">CPU Cores</option>
+                    <option value="1">1 Core</option>
+                    <option value="2">2 Core</option>
+                    <option value="3">4 Core</option>
+                    <option value="4">6 Core</option>
+                    <option value="5">8 Core</option>
+            
+                  </select>
+
+                  <select id = "Select">
+                    <option value="CPU Cores">Memory</option>
+                    <option value="1">256 MB</option>
+                    <option value="2">512 MB</option>
+                    <option value="3">1 GB</option>
+                    <option value="4">4 GB</option>
+                    <option value="5">8 GB</option>
+            
+                  </select>
+
+                </em>
+              </div> 
+              <div label="CPU Optimised"> 
+                <em>Details to be Added After MileStone2</em> 
+              </div> 
+              <div label="Storage Optimised"> 
+                <em>Details to be Added After MileStone2</em> 
+              </div> 
+              <div label="Network Optimised"> 
+                <em>Details to be Added After MileStone2</em> 
+              </div> 
+          </Tabs> 
+          </em> 
        </div> 
        <div label="Choose Storage and Network"> 
-         Nothing to see here, this tab is <em>extinct</em>! 
+         <em>
+            <div>
+              <h2>Network Outbound Traffic</h2>
+
+            </div>
+         </em> 
        </div> 
        <div label="Configure Security"> 
-         Nothing to see here, this tab is <em>extinct</em>! 
+          <em>
+            <form>
+              <input type="radio" name="fruit" value="Create a new Security Group" />Create a new Security Group
+              <input type="radio" name="fruit" value="Select an Existing security Group" />Select an Existing security Group
+            </form>
+            
+            <div>
+              --------------------------------------------------------------------------------------------------------------------------------
+
+            </div>
+            <div>
+              <h1>Select Security Group</h1>
+            </div>
+            <div>
+              <select id = "Select">
+                  <option value="Security Group">Security Group</option>
+                  <option value="1">Security SG 1</option>
+                  <option value="1">Security SG 2</option>
+                  <option value="1">Security SG 3</option>
+                  <option value="1">Security SX 27</option>
+                  <option value="1">Security SL 12</option>
+                  <option value="1">Group 29</option>
+                  <option value="1">Security RT</option>
+                  <option value="1">SGX 6</option>
+                
+              </select>
+            </div>
+          </em> 
        </div> 
        <div label="Review and Launch"> 
-         Nothing to see here, this tab is <em>extinct</em>! 
+         <em>All the Accumulated Data Should Come Here</em>! 
        </div> 
      </Tabs> 
     </div>
