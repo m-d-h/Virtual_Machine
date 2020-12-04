@@ -1,6 +1,7 @@
 
 import './App.css';
 import Tabs from "./components/Tabs"; 
+//import StackGrid from "react-stack-grid";
 
 function App() {
   return (
@@ -17,15 +18,99 @@ function App() {
 
       <Tabs> 
        <div label="Choose Image"> 
-         See ya later, 
            <em>
-              <div>
-                Linux 2 Image
+           <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
               </div>
+              <div>
+
+                <h1>Linux 2 Image</h1>
+                <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
+                    <form>
+                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                        <button type="submit"> Select
+                        </button>
+                    </form>
+              </div>
+              
+              <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
+              </div>
+              <div>
+                <h1>Ubuntu Server 18.04 LTS</h1>
+                <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
+                    <form>
+                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                        <button type="submit"> Select
+                        </button>
+                    </form>
+              </div>
+              <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
+              </div>
+              <div>
+                <h1>Red Hat Enterprise Linux 8</h1>
+                <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
+
+              </div>
+              <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
+              </div>
+              <div>
+                <h1>Microsoft Windows Server 2019 Base</h1>
+                <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
+                    <form>
+                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                        <button type="submit"> Select
+                        </button>
+                    </form>
+              </div>
+              <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
+              </div>
+              <div>
+                <h1>SUSE Linux Enterprise Server</h1>
+                <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
+                    <form>
+                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                        <button type="submit"> Select
+                        </button>
+                    </form>
+              </div>
+
+              <div>
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              
+              </div>
+
            </em>! 
        </div> 
        <div label="Choose Instance Type"> 
-         After 'while, <em>Fill</em>! 
+           <em>
+           <div>
+                <h1>Tabs Demo</h1>
+              <Tabs> 
+                <div label="Gator"> 
+                  See ya later, <em>Alligator</em>! 
+                </div> 
+                <div label="Croc"> 
+                  After 'while, <em>Crocodile</em>! 
+                </div> 
+                <div label="Sarcosuchus"> 
+                  Nothing to see here, this tab is <em>extinct</em>! 
+                </div> 
+              </Tabs> 
+          </div>
+          </em>! 
        </div> 
        <div label="Choose Storage and Network"> 
          Nothing to see here, this tab is <em>extinct</em>! 
@@ -33,7 +118,7 @@ function App() {
        <div label="Configure Security"> 
          Nothing to see here, this tab is <em>extinct</em>! 
        </div> 
-       <div label="Review and Launch ....."> 
+       <div label="Review and Launch"> 
          Nothing to see here, this tab is <em>extinct</em>! 
        </div> 
      </Tabs> 
