@@ -1,8 +1,23 @@
 
 import './App.css';
 import Tabs from "./components/Tabs"; 
+import React, { Component } from "react";
 
 //import StackGrid from "react-stack-grid";
+
+/*
+class PrintThisComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <button onClick={() => window.alert("Linux 2 Image 64-Bit (x86) Total Cost - $ ")}>PRINT</button>        
+      </div>
+    )
+  }
+}
+*/
+
+
 
 function App() {
   return (
@@ -29,10 +44,11 @@ function App() {
                 <h1>Linux 2 Image</h1>
                 <p>Linux 2 comes with 5 Years of Support. It Provides Linux Kernel 4.14 tuned for Optimal Performance</p>
                     <form>
-                        <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
-                        <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
-                        <button type="submit"> Select
-                        </button>
+                      <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
+                      <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
+                      <button type="submit" onClick={() => window.alert("Linux 2 Image 64-Bit , New Estimated Cost : $ 243.6/month ")}  > Select
+                      </button>
+                        
                     </form>
               </div>
               
@@ -46,7 +62,7 @@ function App() {
                     <form>
                         <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
                         <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
-                        <button type="submit"> Select
+                        <button type="submit" onClick={() => window.alert("Ubuntu Server 18.04 LTS, 64-Bit , New Estimated Cost : $ 243.6/month ")}> Select
                         </button>
                     </form>
               </div>
@@ -60,7 +76,7 @@ function App() {
                     <form>
                         <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
                         <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
-                        <button type="submit"> Select
+                        <button type="submit" onClick={() => window.alert("Red Hat Enterprise Linux, 64-Bit , New Estimated Cost : $ 300/month ")}> Select
                         </button>
                     </form>
               </div>
@@ -74,7 +90,7 @@ function App() {
                     <form>
                         <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
                         <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
-                        <button type="submit"> Select
+                        <button type="submit"  onClick={() => window.alert("Microsoft Windows Server 2019 Base, 64-Bit , New Estimated Cost : $ 338.6/month ")}> Select
                         </button>
                     </form>
               </div>
@@ -88,7 +104,7 @@ function App() {
                     <form>
                         <input type="radio" name="fruit" value="64-Bit (x86)" />64-Bit (x86)
                         <input type="radio" name="fruit" value="64-Bit (ARM)" />64-Bit (ARM)
-                        <button type="submit"> Select
+                        <button type="submit" onClick={() => window.alert("SUSE Linux Enterprise Server, 64-Bit , New Estimated Cost : $ 200.22/month ")}> Select
                         </button>
                     </form>
               </div>
