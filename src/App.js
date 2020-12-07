@@ -3,22 +3,6 @@ import './App.css';
 import Tabs from "./components/Tabs"; 
 import React, { Component } from "react";
 
-//import StackGrid from "react-stack-grid";
-
-/*
-class PrintThisComponent extends React.Component {
-  render() {
-    return (
-      <div>
-        <button onClick={() => window.alert("Linux 2 Image 64-Bit (x86) Total Cost - $ ")}>PRINT</button>        
-      </div>
-    )
-  }
-}
-*/
-
-
-
 function App() {
   return (
     <div>
@@ -145,13 +129,43 @@ function App() {
                 </em>
               </div> 
               <div label="CPU Optimised"> 
-                <em>Details to be Added After MileStone2</em> 
+                <em>
+                  <select id = "Select">
+                      <option value="CPU Cores">CPU Cores</option>
+                      <option value="1">1 Core</option>
+                      <option value="2">2 Core</option>
+                      <option value="3">4 Core</option>
+                      <option value="4">6 Core</option>
+                      <option value="5">8 Core</option>
+              
+                  </select>
+                </em> 
               </div> 
               <div label="Storage Optimised"> 
-                <em>Details to be Added After MileStone2</em> 
+                <em>
+
+                  <select id = "Select">
+                    <option value="CPU Memory">CPU Memory</option>
+                    <option value="1">1 GB</option>
+                    <option value="2">2 GB</option>
+                    <option value="3">4 GB</option>
+                    <option value="5">8 Core</option>
+            
+                  </select>
+
+                </em> 
               </div> 
               <div label="Network Optimised"> 
-                <em>Details to be Added After MileStone2</em> 
+                <em>
+                <select id = "Select">
+                    <option value="Network">Network</option>
+                    <option value="1">1 GHz</option>
+                    <option value="2">2 GHz</option>
+                    <option value="3">4 GHz</option>
+                    <option value="5">8 GHz</option>
+            
+                  </select>
+                </em> 
               </div> 
           </Tabs> 
           </em> 
@@ -159,9 +173,26 @@ function App() {
        <div label="Choose Storage and Network"> 
          <em>
             <div>
-              <h2>Network Outbound Traffic</h2>
+              <h3>Select Memory Type</h3>
+                    <form>
+                        <input type="radio" name="fruit" value="Magnetic Disc" />Magnetic Disc
+                        <input type="radio" name="fruit" value="SSD" />SSD
+                    </form>
 
+                    
             </div>
+
+            <div>
+            <form>
+                        <input type="radio" name="Mem" value="128 GB" />128 GB
+                        <input type="radio" name="Mem" value="512 GB" />512 GB
+                        <input type="radio" name="Mem" value="1 TB" />1 TB
+                        <button type="submit" onClick={() => window.alert("Memory type and Storage added to Summary")}> Select
+                        </button>
+                    </form>
+            </div>
+
+
          </em> 
        </div> 
        <div label="Configure Security"> 
